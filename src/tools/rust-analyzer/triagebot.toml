@@ -1,0 +1,15 @@
+[assign]
+
+[shortcut]
+
+[relabel]
+allow-unauthenticated = [
+    "S-*",
+]
+
+[autolabel."S-waiting-on-review"]
+new_pr = true
+
+[no-merges]
+exclude_labels = ["sync"]
+labels = ["has-merge-commits", "S-waiting-on-author"]
